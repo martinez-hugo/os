@@ -126,13 +126,13 @@ jobs:
           project_id: prod-images-c6e5
 
       - name: 'Download x86_64 package archives'
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           path: /tmp/artifacts/
           name: packages-x86_64
 
       - name: 'Download aarch64 package archives'
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           path: /tmp/artifacts/
           name: packages-aarch64
